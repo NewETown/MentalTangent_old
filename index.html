@@ -16,7 +16,6 @@
 </head>
 <body>
   <!-- Header and Nav -->
- 
   <div class="row">
     <div class="large-3 columns">
       <h1><img src="http://placehold.it/400x100&text=Mental%20Tangent"></h1>
@@ -77,40 +76,17 @@
   <!-- Who we are -->
 
   <div id="whoweare" class="row">
-    <div class="large-4 columns">
-      <img src="http://placehold.it/400x300&text=Everett">
+    <h4>Founder Bios</h4>
+    <div class="large-6 column">
+      <a href="#" data-reveal-id="everettModal">
+        <img src="http://placehold.it/400x300&text=Everett">
+      </a>
     </div>
-    <div class="large-8 columns">
-      <div class="column">
-        <div class="large-4 column">
-          <h4>Everett Carney</h4>
-        </div>
-        <div class="large-6 column">
-          <h7>CEO, Creative and Technical Director</h7>
-        </div>
-      </div>
-      <div class="row">
-        <p>Everett studied Computer Science at Washington State University before leaving school early to pursue a career in the video game industry. He spent the next two years at ArenaNet working on Guild Wars 2 as a Software Development Engineer in Test. Everett left ArenaNet to try out a Program Manager position with Microsoft's Interactive Entertainment Business; for the next seven months he managed two groups of DevOps engineers focused on monitoring and building automation to keep Xbox Live (and other "Live" services) afloat. Ultimately he left Microsoft in June 2013 to pursue Mental Tangent and his personal goals.</p>
-      </div>
+    <div class="large-6 column">
+      <a href="#" data-reveal-id="bryantModal">
+        <img src="http://placehold.it/400x300&text=Bryant" align="right">
+      </a>
     </div>
-
-    <div class="large-8 columns">
-      <div class="column">
-        <div class="large-4 column">
-          <h4>Bryant Smick</h4>
-        </div>
-        <div class="large-6 column">
-          <h7>COO, Director of Finance and Legal</h7>
-        </div>
-      </div>
-      <div class="row">
-        <p>Nobody cares what Bryant has done yet because he's still in school and that makes us all giggle. Actually he just hasn't written his bio yet, <3 u bro.</p>
-      </div>
-    </div>
-    <div class="large-4 columns">
-      <img src="http://placehold.it/400x300&text=Bryant">
-    </div>
-
   </div>
  
   <!-- Footer -->
@@ -140,6 +116,7 @@
   </script>
   
   <script src="js/foundation.min.js"></script>
+  <script src="js/foundation/foundation.reveal.js"></script>
   <!--
   
   <script src="js/foundation/foundation.js"></script>
@@ -160,8 +137,6 @@
   
   <script src="js/foundation/foundation.orbit.js"></script>
   
-  <script src="js/foundation/foundation.reveal.js"></script>
-  
   <script src="js/foundation/foundation.section.js"></script>
   
   <script src="js/foundation/foundation.tooltips.js"></script>
@@ -177,5 +152,40 @@
   <script>
     $(document).foundation();
   </script>
-</body>
+
+  <div id="everettModal" class="reveal-modal large">
+    <div class="large-8 columns">
+      <div class="row">
+        <div class="large-6 column">
+          <h4>Everett Carney</h4>
+        </div>
+        <div class="large-6 column">
+          <h7>CEO, Creative and Technical Director</h7>
+        </div>
+      </div>
+      <div class="large-12 column">
+        <p>Everett studied Computer Science at Washington State University before leaving school early to pursue a career in the video game industry. He spent the next two years at ArenaNet working on Guild Wars 2 as a Software Development Engineer in Test. Everett left ArenaNet to try out a Program Manager position with Microsoft's Interactive Entertainment Business; for the next seven months he managed two groups of DevOps engineers focused on monitoring and building automation to keep Xbox Live (and other "Live" services) afloat. Ultimately he left Microsoft in June 2013 to pursue Mental Tangent and his personal goals.</p>
+      </div>
+    </div>
+    <a class="close-reveal-modal">&#215;</a>
+  </div>
+
+  <div id="bryantModal" class="reveal-modal large">
+    <div class="large-8 columns">
+      <div class="row">
+        <div class="large-6 column">
+            <h4>Bryant Smick</h4>
+          </div>
+          <div class="large-6 column">
+            <h7>COO, Director of Finance and Legal</h7>
+          </div>
+        </div>
+        <div class="large-12 column">
+          <p>Nobody cares what Bryant has done yet because he's still in school and that makes us all giggle. Actually he just hasn't written his bio yet, <3 u bro.</p>
+        </div>
+     </div>
+     <a class="close-reveal-modal">&#215;</a>
+   </div>
+
+  </body>
 </html>
