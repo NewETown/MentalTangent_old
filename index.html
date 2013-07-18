@@ -16,6 +16,16 @@
     }
     _kms('//i.kissmetrics.com/i.js');
     _kms('//doug1izaerwt3.cloudfront.net/' + _kmk + '.1.js');
+
+    function _kmsClick(id) {
+      _kmq.push(['record', 'Bio Click', {'bio':id}]);
+    }
+
+    var eMod = document.getElementById('everettModal');
+    eMod.onclick = _kmsClick('everettModal');
+    var bMod = document.getElementById('bryantModal');
+    bMod.onclick = _kmsClick('bryantModal');
+    
   </script>
 
 	<meta charset="utf-8" />
@@ -100,12 +110,12 @@
       <h4>Founder Bios</h4>
     </div>
     <div class="large-6 column">
-      <a href="#" data-reveal-id="everettModal">
+      <a href="#" data-reveal-id="everettModal" id="everettModal">
         <img src="http://placehold.it/400x300&text=Everett">
       </a>
     </div>
     <div class="large-6 column">
-      <a href="#" data-reveal-id="bryantModal">
+      <a href="#" data-reveal-id="bryantModal" id="bryantModal">
         <img src="http://placehold.it/400x300&text=Bryant" align="right">
       </a>
     </div>
@@ -173,9 +183,7 @@
   
   <script>
     $(document).foundation();
-  </script>
 
-  <script>
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
     (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
     m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
