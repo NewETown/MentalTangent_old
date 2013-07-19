@@ -16,10 +16,6 @@
     }
     _kms('//i.kissmetrics.com/i.js');
     _kms('//doug1izaerwt3.cloudfront.net/' + _kmk + '.1.js');
-
-    function _kmsClick(id) {
-      _kmq.push(['record', 'Bio Click', {'bio':id}]);
-    }
   </script>
 
 	<meta charset="utf-8" />
@@ -104,12 +100,12 @@
       <h4>Founder Bios</h4>
     </div>
     <div class="large-6 column">
-      <a id="eMBtn" href="#" data-reveal-id="everettModal">
+      <a id="eMBtn" href="#" data-reveal-id="everettModal" onclick="_kmq.push(['record', 'Bio Click', {'bio':'everettModal'}]);">
         <img src="http://placehold.it/400x300&text=Everett">
       </a>
     </div>
     <div class="large-6 column">
-      <a id="bMBtn" href="#" data-reveal-id="bryantModal">
+      <a id="bMBtn" href="#" data-reveal-id="bryantModal" onclick="_kmq.push(['record', 'Bio Click', {'bio':'bryantModal'}]);">
         <img src="http://placehold.it/400x300&text=Bryant" align="right">
       </a>
     </div>
@@ -189,13 +185,6 @@
 
     ga('create', 'UA-42403118-1', 'mentaltangent.net');
     ga('send', 'pageview');
-  </script>
-
-  <script type="text/javascript">
-    var eMod = document.getElementById('eMBtn');
-    eMod.onclick = _kmsClick('everettModal');
-    var bMod = document.getElementById('bMBtn');
-    bMod.onclick = _kmsClick('bryantModal');
   </script>
 
   <div id="everettModal" class="reveal-modal large">
