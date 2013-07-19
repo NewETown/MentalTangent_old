@@ -17,10 +17,9 @@
     _kms('//i.kissmetrics.com/i.js');
     _kms('//doug1izaerwt3.cloudfront.net/' + _kmk + '.1.js');
 
-    var eMod = document.getElementById('eMBtn');
-    eMod.onclick = _kmsClick('everettModal');
-    var bMod = document.getElementById('bMBtn');
-    bMod.onclick = _kmsClick('bryantModal');
+    function _kmsClick(id) {
+      _kmq.push(['record', 'Bio Click', {'bio':id}]);
+    }
   </script>
 
 	<meta charset="utf-8" />
@@ -190,6 +189,13 @@
 
     ga('create', 'UA-42403118-1', 'mentaltangent.net');
     ga('send', 'pageview');
+  </script>
+
+  <script type="text/javascript">
+    var eMod = document.getElementById('eMBtn');
+    eMod.onclick = _kmsClick('everettModal');
+    var bMod = document.getElementById('bMBtn');
+    bMod.onclick = _kmsClick('bryantModal');
   </script>
 
   <div id="everettModal" class="reveal-modal large">
