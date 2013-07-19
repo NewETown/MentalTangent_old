@@ -100,12 +100,12 @@
       <h4>Founder Bios</h4>
     </div>
     <div class="large-6 column">
-      <a href="#" data-reveal-id="everettModal" id="everettModal">
+      <a href="#" data-reveal-id="everettModal">
         <img src="http://placehold.it/400x300&text=Everett">
       </a>
     </div>
     <div class="large-6 column">
-      <a href="#" data-reveal-id="bryantModal" id="bryantModal">
+      <a  id="bryantModal" href="#" data-reveal-id="bryantModal">
         <img src="http://placehold.it/400x300&text=Bryant" align="right">
       </a>
     </div>
@@ -183,6 +183,16 @@
 
     ga('create', 'UA-42403118-1', 'mentaltangent.net');
     ga('send', 'pageview');
+  </script>
+
+  <script type="text/javascript">
+    function _kmsClick(id) {
+        _kmq.push(['record', 'Bio Click', {'bio':id}]);
+    }
+    var eMod = document.getElementById('everettModal');
+    eMod.onclick = _kmsClick('everettModal');
+    var bMod = document.getElementById('bryantModal');
+    bMod.onclick = _kmsClick('bryantModal');
   </script>
 
   <div id="everettModal" class="reveal-modal large">
